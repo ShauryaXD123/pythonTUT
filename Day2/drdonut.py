@@ -1,8 +1,8 @@
 #this is a program to generate a marksheet
 
 print("drdonut's marksheet generator ")
-Name=input("Enter student's name")
-rollNo=int(input("Enter student's roll no"))
+Name=input("Enter student's name ")
+rollNo=int(input("Enter student's roll no "))
 print("Enter student's marks ")
 
 Maths=float(input( "Enter maths marks "))
@@ -15,6 +15,7 @@ Sst=float(input("Enter sst marks "))
 sum=Maths+Science+English+Hindi+Sst
 Average=sum/5
 
+percent=(sum/500)*100
 print("---------Mark Sheet---------")
 
 print("student name : ",Name)
@@ -27,3 +28,10 @@ print("Hindi: ",Hindi)
 print("Sst: ",Sst)
 
 print("result avg : ",Average)
+
+print("in percentage : ",percent,"%")
+
+if percent>=50:
+    print("Bravo! you have passed")
+else:
+    print("paadhai karo ies ivs bano aur desh ki seva karo")    
