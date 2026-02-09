@@ -3,9 +3,21 @@
 
 #conditional opr -> ==,<,>   >= , <= , != (not equals to)
 
-age = int(input("Enter your age "))
+# age = int(input("Enter your age "))
 
-if age >= 18 :
-    print("You can vote ")
+# if age >= 18 :
+#     print("You can vote ")
+# else:
+#     print("You can't vote ")
+
+
+trafficPolice = input("Enter required signal : (Red,Yellow,Green) :- ")
+
+if trafficPolice == "Red" :
+    print("stop")
+elif trafficPolice=="Yellow":
+    print("Ready")
+elif trafficPolice=="Green":
+    print("Go")
 else:
-    print("You can't vote ")
+    print("Invalid colour")        
